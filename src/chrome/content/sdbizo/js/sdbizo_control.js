@@ -44,6 +44,7 @@ var sdbizo_region_to_url = function(region) {
   if(region == 'us-west-1') return 'sdb.us-west-1.amazonaws.com';
   if(region == 'eu-west-1') return 'sdb.eu-west-1.amazonaws.com';
   if(region == 'ap-southeast-1') return 'sdb.ap-southeast-1.amazonaws.com';
+  if(region == 'ap-northeast-1') return 'sdb.ap-northeast-1.amazonaws.com';
   // else default to east
   return 'sdb.amazonaws.com';
 }
@@ -52,6 +53,7 @@ var sdbizo_region_to_index = function(region) {
   if(region == 'us-west-1') return 1;
   if(region == 'eu-west-1') return 2;
   if(region == 'ap-southeast-1') return 3;
+  if(region == 'ap-northeast-1') return 4;
   // else default to east
   return 0;
 }

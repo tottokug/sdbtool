@@ -133,6 +133,7 @@
                    <menuitem label="US West 1 (Northern California)" value="us-west-1"/>
                    <menuitem label="EU West 1 (Ireland)" value="eu-west-1"/>
                    <menuitem label="Asia Pacific Southeast 1 (Singapore)" value="ap-southeast-1"/>
+                   <menuitem label="Asia Pacific Northeast 1 (Tokyo)" value="ap-northeast-1"/>
                  </menupopup>
                </menulist>
              </groupbox>
