@@ -1,0 +1,45 @@
+diff --git build.sh build.sh
+index aba2464..55d4685 100755
+--- build.sh
++++ build.sh
+@@ -30,7 +30,7 @@ else
+     export SED_ARGS="-i"
+ fi
+ 
+-export PKG_VERSION=2010.08.05
++export PKG_VERSION=2011.03.05
+ export PKG_RELEASE=$(get_pkg_release)
+ export PKG_NAME=sdbizo
+ export BASE=$PKG_NAME-$PKG_VERSION.$PKG_RELEASE
+diff --git src/chrome/content/sdbizo/js/sdbizo_control.js src/chrome/content/sdbizo/js/sdbizo_control.js
+index ed623ad..252fc40 100644
+--- src/chrome/content/sdbizo/js/sdbizo_control.js
++++ src/chrome/content/sdbizo/js/sdbizo_control.js
+@@ -44,6 +44,7 @@ var sdbizo_region_to_url = function(region) {
+   if(region == 'us-west-1') return 'sdb.us-west-1.amazonaws.com';
+   if(region == 'eu-west-1') return 'sdb.eu-west-1.amazonaws.com';
+   if(region == 'ap-southeast-1') return 'sdb.ap-southeast-1.amazonaws.com';
++  if(region == 'ap-northeast-1') return 'sdb.ap-northeast-1.amazonaws.com';
+   // else default to east
+   return 'sdb.amazonaws.com';
+ }
+@@ -52,6 +53,7 @@ var sdbizo_region_to_index = function(region) {
+   if(region == 'us-west-1') return 1;
+   if(region == 'eu-west-1') return 2;
+   if(region == 'ap-southeast-1') return 3;
++  if(region == 'ap-northeast-1') return 4;
+   // else default to east
+   return 0;
+ }
+diff --git src/chrome/content/sdbizo/sdbizo_window.xul src/chrome/content/sdbizo/sdbizo_window.xul
+index 9697358..8de0880 100644
+--- src/chrome/content/sdbizo/sdbizo_window.xul
++++ src/chrome/content/sdbizo/sdbizo_window.xul
+@@ -133,6 +133,7 @@
+                    <menuitem label="US West 1 (Northern California)" value="us-west-1"/>
+                    <menuitem label="EU West 1 (Ireland)" value="eu-west-1"/>
+                    <menuitem label="Asia Pacific Southeast 1 (Singapore)" value="ap-southeast-1"/>
++                   <menuitem label="Asia Pacific Northeast 1 (Tokyo)" value="ap-northeast-1"/>
+                  </menupopup>
+                </menulist>
+              </groupbox>
