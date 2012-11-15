@@ -4,7 +4,7 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:id>sdbizo@bizo.com</em:id>
+    <em:id>sdbtool@tottokug.com</em:id>
     <em:type>2</em:type>
     <em:version>__VERSION__.__BUILD__</em:version>
     <em:file resource="urn:mozilla:extension:file:sdbizo.jar"/>
@@ -15,12 +15,12 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>1.5</em:minVersion>
-        <em:maxVersion>4.*</em:maxVersion>
+        <em:maxVersion>20.*</em:maxVersion>
       </Description>
     </em:targetApplication>
 
     <!-- Front End MetaData -->
-    <em:name>SDBizo</em:name>
+    <em:name>SDBTool</em:name>
     <em:description>Mozilla Firefox extension for interacting with Amazon Simple DB (SDB).</em:description>
     <em:creator>Donnie Flood at Bizo, Inc (http://www.bizo.com)</em:creator>
     <em:homepageURL>http://www.bizo.com</em:homepageURL>
