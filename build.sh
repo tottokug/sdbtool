@@ -1,8 +1,10 @@
-#!/bin/bash
+#!/bin/bash -x
 
 date
 
 set -e
+
+export PKG_VERSION=2012.11.13
 
 function get_dir_revision() {
     local pkg_release
@@ -30,9 +32,8 @@ else
     export SED_ARGS="-i"
 fi
 
-export PKG_VERSION=2011.03.05
 export PKG_RELEASE=$(get_pkg_release)
-export PKG_NAME=sdbizo
+export PKG_NAME=sdbtool
 export BASE=$PKG_NAME-$PKG_VERSION.$PKG_RELEASE
 
 echo "+ Bulding $PKG_NAME version $PKG_VERSION-$PKG_RELEASE"
@@ -47,7 +48,6 @@ pushd build/$BASE > /dev/null
   for f in \
     chrome/content/sdbizo/*.xul \
     chrome/content/sdbizo/js/*.js \
-    chrome/content/sdbizo/images/*.gif \
     *.rdf; do
     sed -e "s/__VERSION__/$PKG_VERSION/g" $SED_ARGS $f
     sed -e "s/__BUILD__/$PKG_RELEASE/g" $SED_ARGS $f
