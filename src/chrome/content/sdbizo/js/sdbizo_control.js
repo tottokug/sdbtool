@@ -45,6 +45,7 @@ var sdbizo_region_to_url = function(region) {
   if(region == 'eu-west-1') return 'sdb.eu-west-1.amazonaws.com';
   if(region == 'ap-southeast-1') return 'sdb.ap-southeast-1.amazonaws.com';
   if(region == 'ap-northeast-1') return 'sdb.ap-northeast-1.amazonaws.com';
+  if(region == 'ap-southeast-2') return 'sdb.ap-southeast-2.amazonaws.com';
   // else default to east
   return 'sdb.amazonaws.com';
 }

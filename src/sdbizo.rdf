@@ -10,10 +10,10 @@
           <version>__VERSION__.__BUILD__</version>
           <targetApplication>
             <r:Description>
-              <id>{sdbizo@bizo.com}</id>
+              <id>{sdbtools@tottokug.com}</id>
               <minVersion>1.5</minVersion>
-              <maxVersion>3.6.*</maxVersion>
-              <updateLink>https://s3.amazonaws.com/com-bizo-public/tools/sdbizo/sdbizo.xpi</updateLink>
+              <maxVersion>20.*</maxVersion>
+              <updateLink>https://raw.github.com/tottokug/tools/sdbizo/sdbizo.xpi</updateLink>
             </r:Description>
           </targetApplication>
         </r:Description>
